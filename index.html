@@ -134,13 +134,10 @@
             <a href="D:\portfolio\assets\my-cv.pdf" class="btn btn2" download>Download CV</a>
           </div>
           <div class = "contact-right">
-            <form action = "/login" method="post" onsubmit="redirectToLogin(); return false;">
+            <form action="https://formsubmit.co/gracethakkolkaran29@gmail.com" method="POST">
+              <input type ="text" name="email" placeholder = "Email" required>
               
-              <input type ="text" name="Name" placeholder = "Your Name" required>
               <input type ="text" name="Comments" placeholder = "Your Comments" required>
-              <button type ="submit" class="btn btn2">Submit</button>
-            </form>
-            <form action = "index.html" method="post" onsubmit="redirectToIndex(); return false;">
               <textarea name="Quarries" rows="6" placeholder = "Your Quarries"></textarea>
               <button type ="submit" class="btn btn2">Submit</button>
             </form>
@@ -172,13 +169,13 @@
     
       }
     </script>
-    <!-- ... (other HTML code) ... -->
+    
 
     <script>
-        function redirectToLogin() 
+        function redirectToIndex() 
         {
             // Redirect to the login page
-         window.location.href = 'login.html';  // Update the URL as per your actual login page URL
+         window.location.href = 'index.html';  // Update the URL as per your actual login page URL
         }
     </script>
 
