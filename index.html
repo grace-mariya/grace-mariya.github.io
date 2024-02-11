@@ -1,197 +1,169 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
-
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
         <title>PORTFOLIO</title>
-        <link rel ="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="stylesheet.css">
         <script src="https://kit.fontawesome.com/e6b8371d90.js" crossorigin="anonymous"></script>
     </head>
-
     <body>
-        
-       <div id ="header">
-         <div class="container">         
-             <nav>
-             
-                <ul id="sidemenu"></ul>
-                  <li><a href = "#"><b>Home</b></a></li>
-                  <li><a href = "#about"><b>about</b></a></li>
-                  <li><a href = "#skills"><b>skills</b></a></li>
-                  <li><a href = "#works"><b>works</b></a></li>
-                  <li><a href = "#contact"><b>contact</b></a></li>
-                  <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
-                </ul>
-                <i class ="fa-solid fa-bars" onclick="openmenu()"></i>
-             </nav>
-             <div class="header-text">
-               <p>Engineer</p>
-               <h1>
-                 Hi,I'm <span>Grace Mariya</span><br/>
-               </h1>
-               <p><h6>I'm an aspiring web developer with strong passion for creating interactive and user-friendly websites.
-                <br>My journey in web development has equipped me with a solid foundation in front-end and back-end technologies, including HTML, CSS, JavaScript, and Python.
-                I'm committed to crafting innovative web solutions that deliver exceptional user experiences.</h6></p>
-             </div>
-         </div>
-       </div>
-       <div id="about">
-        <div class="container">
-        <div class ="row">
-            <div class="about-col-1"> 
-              <img src = "./assets/images/photo.jpg" alt = "Grace Mariya">
+        <div id="header">
+            <div class="container">         
+                <nav>  
+                    <ul>
+                        <li> <a href="#"><b>Home</b></a></li>
+                        <li> <a href="#about"><b>About</b></a></li>
+                        <li> <a href="#skills"><b>Skills</b></a></li>
+                        <li> <a href="#works"><b>Works</b></a></li>
+                        <li> <a href="#contact"><b>Contact</b></a></li>
+                    </ul> 
+                    <ul id="sidemenu">
+                        <li> <a href="#"><b>Home</b></a></li>
+                        <li> <a href="#about"><b>About</b></a></li>
+                        <li> <a href="#skills"><b>Skills</b></a></li>
+                        <li> <a href="#works"><b>Works</b></a></li>
+                        <li> <a href="#contact"><b>Contact</b></a></li>
+                        <li> <i class="fa-solid fa-xmark" onclick="closemenu()"></i> </li>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Engineer</p>
+                    <h1>Hi, I'm <span>Grace Mariya</span><br/></h1>
+                    <p><h6>I'm an aspiring web developer with a strong passion for creating interactive and user-friendly websites.
+                    <br>My journey in web development has equipped me with a solid foundation in front-end and back-end technologies, including HTML, CSS, JavaScript, and Python.
+                    I'm committed to crafting innovative web solutions that deliver exceptional user experiences.</h6></p>
+                </div>
             </div>
-            
-            <div class ="about-col-2">
-              <h1 class ="sub-title">About Me</h1>
-              <p>I'm a Btech student at Sahrdaya College of Engineering and Technology</p>
-              <div class="tab-titles">
-                 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                 
-                 <p class="tab-links" onclick="opentab('education')">Education</p>
-
-              </div>
-              <div class="tab-contents active-tab" id="skills">
-                  <ul>
-                    <li><span>Web Development</span></li>
-                    <li><span>App Development</span><br>Android Apps</li>
-                  </ul>
-              </div>
-              <div class="tab-contents" id="education">
-                  <ul>
-                    <li><span>2023 -current</span><br>Btech 3rd Year</li>
-                    <li><span>2021 -Passout</span><br>12th with 97%(HSS)Carmel HSS Chalakudy</li>
-                    <li><span>2019 -Passout</span><br>10th with 86%(CBSE)St.Joseph's EMS Pazhookara</li>
-                  </ul>
-              </div>
-            </div>
-          </div>
         </div>
-       </div>
-
-       <div id="skills">
-        <div class="container">
-          <h1 class="sub-title">My Skills</h1>
-          <div class="skills-list">
-            <div>
-              <i class="fa-solid fa-code"></i>
-              <h2>Web Development</h2>
-              <p>Library Management System<br></p><li>Flask</li><li>MongoDb</li><li>html</li><li>css</li></p>
-              <a href="#works">Learn More</a>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1"> 
+                        <img src="./assets/images/photo.jpg" alt="Grace Mariya">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm a Btech student at Sahrdaya College of Engineering and Technology</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span></li>
+                                <li><span>App Development</span><br>Android Apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023 -current</span><br>Btech 3rd Year</li>
+                                <li><span>2021 -Passout</span><br>12th with 97%(HSS)Carmel HSS Chalakudy</li>
+                                <li><span>2019 -Passout</span><br>10th with 86%(CBSE)St.Joseph's EMS Pazhookara</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-              <i class="fa-brands fa-app-store-ios"></i>
-              <h2>App Development</h2>
-              <p>Navigation App<br><li>Flutter</li><li>Dart</li></p>
-              <a href="#works">Learn More</a>
-            </div>
-          </div>
         </div>
-       </div>
-       <div id="works">
-        <div class="container">
-          <h1 class="sub-title">My works</h1>
-          <div class="works-list">
-            <div class="work">
-              <img src="./assets/images/work1.jpg" alt = "work-1">
-              <div class="layer">
-                <h3>Library Management System</h3>
-                <p>Where we can edit,delete,and Add Book status</p>
-                <a href="https://github.com/grace-mariya/Grace.github.io/tree/1d56fdcb0445ff358915014fd51edf0c7ec00be2/app"><i class="fa fa-external-link" aria hidden="true"></i></a>
-                
-              </div>
+        <div id="skills">
+            <div class="container">
+                <h1 class="sub-title">My Skills</h1>
+                <div class="skills-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Library Management System<br><li>Flask</li><li>MongoDb</li><li>HTML</li><li>CSS</li></p>
+                        <a href="#works">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>App Development</h2>
+                        <p>Navigation App<br><li>Flutter</li><li>Dart</li></p>
+                        <a href="#works">Learn More</a>
+                    </div>
+                </div>
             </div>
-            
-                
-            <div class="work">
-              <img src="./assets/images/work2.jpg" alt = "work-2">
-              <div class="layer">
-                <h3>Navigation App</h3>
-                <p>Indoor navigation of my college</p>
-                <a href="https://github.com/grace-mariya/Navigate-Flutterb-App"><i class="fa fa-external-link" aria hidden="true"></i></a>
-                
-              </div>
-            </div>
-          </div>
-          <a href="https://github.com/grace-mariya?tab=repositories" class ="btn">See more</a>
         </div>
-       </div>
-       <div id="contact">
-        <div class="container">
-          <div class = "row">
-            <div class ="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-paper-plane"></i>gracemariya29@gmail.com</p>
-            <p><i class="fa-solid fa-square-phone-flip"></i>+91 703 496 437</p>
-            <div class="social-icons">
-              <a href="https://instagram.com/gr_.artgallery?utm_source=qr&igshid=MThlNWY1MzQwNA=="><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/grace-mariya-b18283229"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://github.com/grace-mariya/Grace.github.io"><i class="fa-brands fa-github"></i></a>
+        <div id="works">
+            <div class="container">
+                <h1 class="sub-title">My Works</h1>
+                <div class="works-list">
+                    <div class="work">
+                        <img src="./assets/images/work1.jpg" alt="work-1">
+                        <div class="layer">
+                            <h3>Library Management System</h3>
+                            <p>Where we can edit, delete, and Add Book status</p>
+                            <a href="https://github.com/grace-mariya/Grace.github.io/tree/1d56fdcb0445ff358915014fd51edf0c7ec00be2/app"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./assets/images/work2.jpg" alt="work-2">
+                        <div class="layer">
+                            <h3>Navigation App</h3>
+                            <p>Indoor navigation of my college</p>
+                            <a href="https://github.com/grace-mariya/Navigate-Flutterb-App"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/grace-mariya?tab=repositories" class="btn">See more</a>
             </div>
-            <a href="./assets/my-cv.pdf" class="btn btn2" download>Download CV</a>
-          </div>
-          <div class = "contact-right">
-            <form action="https://formsubmit.co/gracethakkolkaran29@gmail.com" method="POST">
-              <input type ="text" name="email" placeholder = "Email" required>
-              
-              <input type ="text" name="Comments" placeholder = "Your Comments" required>
-              <textarea name="Quarries" rows="6" placeholder = "Your Quarries"></textarea>
-              <button type ="submit" class="btn btn2">Submit</button>
-            </form>
-          </div>
         </div>
-      </div>
-      <div class = "copyright">
-        <p>Copyright @ Grace. Made with<i class ="fa-solid fa-heart"></i>by<a href ="#">Grace Mariya</a></p>
-      </div>
-    </div>
-        
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-    
-      function opentab(tabname)
-      {
-        for(tablink of tablinks)
-        {
-          tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents)
-        {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>gracemariya29@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone-flip"></i>+91 703 496 437</p>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/gr_.artgallery?utm_source=qr&igshid=MThlNWY1MzQwNA=="><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/grace-mariya-b18283229"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/grace-mariya/Grace.github.io"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="D:\portfolio\assets\my-cv.pdf" class="btn btn2" download>Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Grace. Made with<i class="fa-solid fa-heart"></i>by<a href="#">Grace Mariya</a></p>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
 
-    
-      }
-    </script>
-    
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active=link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
 
-    <script>
-        function redirectToIndex() 
-        {
-            // Redirect to the login page
-         window.location.href = 'index.html';  // Update the URL as per your actual login page URL
-        }
-    </script>
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
 
-    
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-         function openmenu()
-         {
-            sidemenu.style.right = "0";
-         }
-         function closemenu()
-         {
-            sidemenu.style.right = "-200px";
-         }
-    </script>
-
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
     </body>
 </html>
