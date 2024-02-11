@@ -385,4 +385,21 @@ nav ul .fa-solid{
 .contact-left,.contact-right{
     flex-basis: 100%;
 }
+
+
+.flash-messages {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.flash-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #dff0d8;
+    color: #3c763d;
+    border-radius: 5px;
+}
+
 }
